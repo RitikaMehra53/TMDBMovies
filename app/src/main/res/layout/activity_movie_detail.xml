@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cs.test.tmdbmovies.view.MovieDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#70000000"></RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+                <com.cs.test.tmdbmovies.utils.controls.TextViewBold
+                    android:layout_width="match_parent"
+                    android:textSize="35dp"
+                    android:layout_marginTop="470dp"
+                    android:text="Movie Name"
+                    android:id="@+id/textViewName"
+                    android:textColor="#ffffff"
+                    android:layout_height="wrap_content" />
+
+            <com.cs.test.tmdbmovies.utils.controls.TextViewLight
+                android:layout_width="match_parent"
+                android:id="@+id/textViewDesciption"
+                android:textSize="18dp"
+                android:text="Sample Text"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
+
+
+            <com.cs.test.tmdbmovies.utils.controls.TextViewLight
+                android:layout_width="match_parent"
+                android:id="@+id/textViewDuration"
+                android:textSize="18dp"
+                android:text="Total Duration : 1 Hr 20 Min"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
+
+
+            <com.cs.test.tmdbmovies.utils.controls.TextViewLight
+                android:layout_width="match_parent"
+                android:id="@+id/textViewRevenue"
+                android:textSize="18dp"
+                android:text="Total Revenue : 1 Hr 20 Min"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
